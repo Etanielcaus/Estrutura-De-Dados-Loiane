@@ -3,13 +3,16 @@ package com.EstruturaDeDados.Vetores.Teste;
 import com.EstruturaDeDados.Vetores.Vetor;
 
 public class Aula03 {
-    public static void main(String[] args) {
-        Vetor vetor = new Vetor(5);
-        
-        vetor.adciona("Azul");
-        vetor.adciona("Laranja");
+    public static void main(String[] args) throws Exception {
+        Vetor vetor = new Vetor(3);
 
-        vetor.visualizarVetor();
+        vetor.adiciona("azul");
+        vetor.adiciona("vermelho");
+        vetor.adiciona("verde");
+        vetor.adiciona("azul");
+        vetor.adiciona("Rosa");
+
+//        vetor.visualizarVetor();
         vetor.visualizarTamanhoDoVetor();
         vetor.visualizarVetorCompleto();
     }
