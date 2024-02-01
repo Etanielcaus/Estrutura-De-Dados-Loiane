@@ -1,5 +1,7 @@
 package com.EstruturaDeDados.Vetores;
 
+import java.util.Arrays;
+
 public class Vetor {
     private String[] elementos;
     private int tamanho;
@@ -58,6 +60,29 @@ public class Vetor {
             }
         }
     } */
+
+    public int tamanho(){
+        return this.tamanho;
+    }
+
+
+    @Override
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+        s.append("[");
+
+        for (int i = 0; i < this.tamanho; i++) {
+            s.append(this.elementos[i]);
+            s.append(", ");
+        }
+
+        if (this.tamanho < 0){
+            s.append(this.elementos[this.tamanho]);
+        }
+        s.append("]");
+
+        return s.toString();
+    }
 
     public void visualizarVetorCompleto(){
         for (int i = 0; i < this.elementos.length; i++) {
